@@ -18,3 +18,8 @@ code {
   color: white;
   font-size: 100px;
 }
+.aboutimg{
+  width: 300px;
+  height: 300px;
+  border-radius:50%
+}

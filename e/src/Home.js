@@ -1,7 +1,8 @@
 import React from 'react';
 import Cart from './Cart';
 import { useState } from 'react';
-import { Navbar, Container,Nav, Button, Row, Col,Card, Badge} from "react-bootstrap";
+import { Navbar, Container, Button, Row, Col,Card} from "react-bootstrap";
+
 
 const Home = () => {
   const [show, setShow] = useState(false);
@@ -100,21 +101,7 @@ const Home = () => {
 
   return (
     <>
-        <Navbar bg="dark" expand="sm" className='col'>
-            <Container className='d-flex'>
-                <div className='d-flex w-50 justify-content-around'>
-                <Nav.Link href="#home">HOME</Nav.Link>
-                <Nav.Link href="#features">STORE</Nav.Link>
-                <Nav.Link href="#pricing">ABOUT</Nav.Link>
-                </div>
-               
-                <div className='d-flex'>  
-                  <Button onClick={handleShow}>Cart <Badge bg='secondary'>{cart.length}</Badge></Button>
-                  
-                </div>
-                
-            </Container>
-        </Navbar>
+        
         <Navbar bg='secondary' expand='lg'  className='d-flex justify-content-center'>
             <h1 className='secondnav'>The Generics</h1>
         </Navbar>
